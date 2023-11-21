@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Feedback Form</title>
+    <p></p>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Rastorinte Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="date">Enter Date (dd/mm/yyyy):</label>
+            <input type="text" id="date" name="date" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="DD/MM/YYYY"
+                required>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit Feedback</button>
+        </form>
+
+        <p id="confirmationMessage" class="hidden">Thank you for your feedback!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
